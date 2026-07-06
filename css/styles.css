@@ -1,0 +1,32 @@
+/* ===========================
+   BASE
+=========================== */
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/typography.css");
+
+/* ===========================
+   COMPONENTS
+=========================== */
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+@import url("./components/navbar.css");
+@import url("./components/modal.css");
+
+/* ===========================
+   LAYOUT
+=========================== */
+@import url("./layout/header.css");
+@import url("./layout/hero.css");
+@import url("./layout/sections.css");
+@import url("./layout/footer.css");
+
+/* ===========================
+   PAGES
+=========================== */
+@import url("./pages/home.css");
+
+/* ===========================
+   RESPONSIVE (A la par de styles.css)
+=========================== */
+@import url("./reponsive.css");

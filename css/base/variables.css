@@ -1,0 +1,39 @@
+:root{
+
+    /* Colores */
+
+    --color-primary:#111111;
+    --color-secondary:#FFFFFF;
+    --color-background:#F8F8F8;
+    --color-text:#222222;
+    --color-text-light:#777777;
+    --color-border:#E5E5E5;
+    --color-whatsapp:#25D366;
+
+    /* Tipografía */
+
+    --font-family:"Poppins",sans-serif;
+
+    /* Contenedor */
+
+    --container-width:1280px;
+
+    /* Espaciado */
+
+    --space-xs:4px;
+    --space-sm:8px;
+    --space-md:16px;
+    --space-lg:24px;
+    --space-xl:32px;
+    --space-2xl:48px;
+    --space-section:96px;
+
+    /* Bordes */
+
+    --radius:12px;
+
+    /* Animaciones */
+
+    --transition:300ms ease;
+
+}

@@ -1,0 +1,61 @@
+/* Botones Base */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    width: auto;
+}
+
+/* Botón Principal (Negro) */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-text-light);
+}
+
+/* Botón Secundario (Borde y transparente) */
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* Botón de WhatsApp Extendido */
+.btn-whatsapp {
+    background-color: var(--color-whatsapp);
+    color: var(--color-secondary);
+    border: none;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* Utilidad para ocupar todo el ancho */
+.btn-block {
+    display: flex;
+    width: 100%;
+}
+
+.icon-ws {
+    margin-right: var(--space-sm);
+}

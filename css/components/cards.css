@@ -1,0 +1,88 @@
+/* Tarjeta de Producto Premium (Formato Grande Destacado) */
+.card-premium-layout {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto una sola columna en móvil */
+    max-width: 800px; /* Ancho ideal para destacar el paquete de 3 */
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition);
+}
+
+.card-premium-layout:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Contenedor de Imagen de la tarjeta */
+.card-premium-layout .card-image {
+    position: relative;
+    background-color: var(--color-background);
+    aspect-ratio: 1 / 1;
+}
+
+.card-premium-layout .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Etiqueta flotante de Best Seller */
+.card-tag {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: var(--space-xs) var(--space-sm);
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-md);
+    width: max-content;
+}
+
+/* Cuerpo de la tarjeta */
+.card-premium-layout .card-body {
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-premium-layout .product-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.card-premium-layout .product-category {
+    font-size: 14px;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-md);
+}
+
+.card-premium-layout .product-brief-description {
+    font-size: 15px;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-lg);
+}
+
+.card-premium-layout .product-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: var(--space-xl);
+}
+
+/* Cambio de diseño para Tablet y Pantallas Grandes (Responsivo para la tarjeta) */
+@media (min-width: 768px) {
+    .card-premium-layout {
+        grid-template-columns: 1fr 1fr; /* Mitad imagen, mitad detalles */
+    }
+}

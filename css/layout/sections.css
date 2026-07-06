@@ -1,0 +1,65 @@
+/* Contenedor General de las Secciones */
+.catalog-section,
+.features-section {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--space-section) var(--space-lg);
+}
+
+/* Encabezados de sección */
+.section-title {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto var(--space-2xl) auto;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-title p {
+    font-size: 15px;
+    color: var(--color-text-light);
+}
+
+/* Bloques de Beneficios / Calidad */
+.features-section {
+    border-top: 1px solid var(--color-border);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+}
+
+.feature-item p {
+    font-size: 15px;
+    color: var(--color-text-light);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Ajuste de columnas en pantallas medianas y grandes */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr; /* Dos columnas lado a lado */
+    }
+    
+    .section-title h2 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,77 @@
+/* Header Principal */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px); /* Efecto esmerilado premium */
+    border-bottom: 1px solid var(--color-border);
+    z-index: 100;
+}
+
+/* Barra de Navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container-width);
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+/* Logotipo */
+.nav-logo a {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-primary);
+}
+
+/* Menú de enlaces (Oculto por defecto en celulares para máxima limpieza) */
+.nav-menu {
+    display: none;
+    gap: var(--space-xl);
+}
+
+.nav-menu a {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-light);
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--color-primary);
+}
+
+/* Botón Call To Action de la Navbar */
+.btn-nav {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 12px;
+    border: 1px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.btn-nav:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+/* Cambio responsivo para Tablets y Computadoras */
+@media (min-width: 768px) {
+    .nav-menu {
+        display: flex; /* Aparecen los enlaces de navegación interna */
+    }
+    
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); /* Centrado óptico del logo tipo marca de lujo */
+    }
+}

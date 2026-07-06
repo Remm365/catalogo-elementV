@@ -1,0 +1,143 @@
+/* Estructura del Modal de Detalles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms ease;
+}
+
+/* Se vuelve visible mediante el JS */
+.modal.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Fondo oscuro difuminado */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+/* Contenedor blanco del contenido */
+.modal-content {
+    position: relative;
+    background-color: var(--color-secondary);
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    border-radius: var(--radius);
+    overflow-y: auto;
+    z-index: 1001;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(20px);
+    transition: transform 300ms ease;
+    padding: var(--space-xl);
+}
+
+.modal.is-visible .modal-content {
+    transform: translateY(0);
+}
+
+/* Botón de cerrar (X) */
+.close-modal {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    font-size: 32px;
+    color: var(--color-text-light);
+    line-height: 1;
+    z-index: 10;
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    color: var(--color-primary);
+}
+
+/* Layout Interno del Modal */
+.modal-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    margin-top: var(--space-md);
+}
+
+.modal-gallery img {
+    width: 100%;
+    border-radius: var(--radius);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.modal-info h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.modal-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.modal-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: var(--space-lg) 0;
+}
+
+.modal-info h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+}
+
+.modal-info p {
+    color: var(--color-text-light);
+    font-size: 15px;
+    margin-bottom: var(--space-lg);
+}
+
+.modal-features-list {
+    margin-bottom: var(--space-2xl);
+}
+
+.modal-features-list li {
+    font-size: 15px;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+    position: relative;
+    padding-left: var(--space-md);
+}
+
+.modal-features-list li::before {
+    content: "•";
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Distribución en dos columnas para pantallas grandes */
+@media (min-width: 768px) {
+    .modal-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}

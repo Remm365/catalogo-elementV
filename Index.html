@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEMENT V | The fifth element</title>
+    <meta name="description" content="Catálogo exclusivo de ropa interior masculina premium.">
+    
+    <!-- Fuentes (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal unificado -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR PREMIUM (Layout / Component) -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <a href="#">ELEMENT V</a>
+            </div>
+            <!-- Enlaces de navegación de propósito único en una sola página -->
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#catalogo">El Paquete</a></li>
+                <li><a href="#calidad">Calidad</a></li>
+            </ul>
+            <!-- Botón de acción directa sutil en la esquina del menú -->
+            <div class="nav-cta">
+                <a href="https://wa.me/1234567890?text=Hola,%20busco%20información%20sobre%20los%20productos." target="_blank" class="btn btn-nav">
+                    Contacto Directo
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (Layout) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Colección Exclusiva</span>
+            <h1>Redefiniendo el Confort Diario</h1>
+            <p>Diseño minimalista y ajuste perfecto confeccionado con materiales premium.</p>
+            <a href="#catalogo" class="btn btn-primary">Descubrir Ahora</a>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION (Layout / Pages) -->
+    <main id="catalogo" class="catalog-section">
+        <div class="section-title">
+            <h2>Edición Destacada</h2>
+            <p>Piezas esenciales diseñadas con precisión para ofrecer soporte y frescura incomparables.</p>
+        </div>
+
+        <!-- CONTENEDOR DEL CATÁLOGO 
+             Actualmente mostrará una sola tarjeta grande, pero está preparado para escalar fácilmente a una grilla cuando aumente tu stock -->
+        <div id="products-container" class="products-grid single-product-layout">
+            <!-- Cargado dinámicamente por JS desde tu productos.json -->
+        </div>
+    </main>
+
+    <!-- DETALLES DE CALIDAD / GARANTÍA (Sección de soporte estético para dar volumen premium) -->
+    <section id="calidad" class="features-section">
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Textiles Premium</h3>
+                <p>Algodón seleccionado de fibra larga que garantiza suavidad extrema y alta durabilidad lavado tras lavado.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Ajuste Ergonómico</h3>
+                <p>Corte pensado para amoldarse perfectamente a la silueta masculina sin generar fricción ni marcas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DETALLE DE PRODUCTO PREMIUM (Component) -->
+    <div id="product-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Cerrar modal">&times;</button>
+            <div id="modal-dynamic-body" class="modal-layout">
+                <!-- Se inyectará dinámicamente mediante JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Layout) -->
+    <footer class="main-footer">
+        <p>&copy; 2026 BrandName. Todos los derechos reservados. Diseñado para el hombre moderno.</p>
+    </footer>
+
+    <!-- Script de control lógico -->
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* Footer Estilizado */
+.main-footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: center;
+    padding: var(--space-2xl) var(--space-lg);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.main-footer p {
+    opacity: 0.7;
+}
