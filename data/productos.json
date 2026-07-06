@@ -4,7 +4,7 @@
         "titulo": "Conjunto Premium",
         "categoria": "Bralette & Bottom",
         "precio": 499.99,
-        "imagen": "/img/Principal.jpg",
+        "imagen": "./img/Principal.jpg",
         "descripcion": "Máximo confort diario confeccionado con el algodón más suave y costuras planas."
     },
     {
