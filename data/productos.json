@@ -4,7 +4,7 @@
         "titulo": "Conjunto Premium",
         "categoria": "Bralette & Bottom",
         "precio": 499.99,
-        "imagen": "./img/Principal.jpg",
+        "imagen": "./img/principal.jpg",
         "descripcion": "Máximo confort diario confeccionado con el algodón más suave y costuras planas."
     },
     {
@@ -17,6 +17,14 @@
     },
     {
         "id": 3,
+        "titulo": "Body Seamless Nude",
+        "categoria": "Efecto Moldeador",
+        "precio": 45.00,
+        "imagen": "./img/body-seamless.jpg",
+        "descripcion": "Diseño sin costuras visibles, ideal para usar debajo de prendas ajustadas."
+    },
+    {
+        "id": 4,
         "titulo": "Body Seamless Nude",
         "categoria": "Efecto Moldeador",
         "precio": 45.00,
